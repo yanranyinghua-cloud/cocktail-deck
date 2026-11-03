@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7761A48E562F39D668059761 /* CocktailDeckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F913C6BE6AE4B99FA23AF1 /* CocktailDeckApp.swift */; };
+		7FE6484B491F9B16F8E21D13 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = E799060F2CD646D60783303A /* Drink.swift */; };
+		1DE96A07AA6F1C20D4394788 /* VerificationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88ED4894A24FCDC39D87FE0 /* VerificationLabel.swift */; };
+		BC80F9B5F9BDA2C2894C21C5 /* DeckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A699F2B91D62FCFF3D97FD /* DeckViewModel.swift */; };
+		B0DA3272893A06AB4DC6E278 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FECC172F72D5FF3331A020C /* ContentView.swift */; };
+		2B374ABF90381422F357681F /* DrinkCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3E17968BF2B65EC3306572 /* DrinkCardView.swift */; };
+		359143F2D5B84300159DDDE3 /* DrinkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D66CE14D3839C55668EB56 /* DrinkListView.swift */; };
+		1D055D5B076001D48EF3315B /* DrinkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072C555CD64AA6B6430648D /* DrinkDetailView.swift */; };
+		C75A92C4B3BD0B1818CABA0C /* SearchFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1465473CD85D5EEC7CD9F8D1 /* SearchFilterBar.swift */; };
+		CF4E8A23D1ED066D1C5D63F4 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6317429CC7BBA03A9B273AC /* AppLanguage.swift */; };
+		E1EEEE14EF87525A43E57392 /* CustomCocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14EFAA227854F106181F2A6 /* CustomCocktail.swift */; };
+		AF98DD6D02117243E76DF416 /* EnglishRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848AE2765D761754FDC5C0A4 /* EnglishRecipe.swift */; };
+		20BA471C04A02537440E8174 /* Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DD116C848FB2CB4BCE9984 /* Recommendation.swift */; };
+		A2074D7686F840AA9A262587 /* ZeroProof.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0DC73AA9F252F66404573F /* ZeroProof.swift */; };
+		F508C5C66E1F13145A69DDA3 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6231F34B88F19A1127F7757E /* Challenge.swift */; };
+		6D34CEEFEEF0D2B7824ED587 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F38A5277A1BE1FB82429543 /* AppStore.swift */; };
+		C8696B0761AC52BD522861F4 /* PhotoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E545EBB270473E493E47EA91 /* PhotoImage.swift */; };
+		8B2C8681C06765A889061B0A /* RecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2C8C1D71AB158F9217A094 /* RecommendView.swift */; };
+		DAA77586265AB79508DCC870 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4724AF4AFC091CA0CD4972 /* MenuView.swift */; };
+		4C63742646F6A93147D26A88 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946895628B2F73EA91FD10A8 /* CollectionView.swift */; };
+		AB5291FDF9F27D013B911127 /* CustomFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4DC7CA1E0CB983360809E4 /* CustomFormView.swift */; };
+		799F8737503EC0E8DF481AA6 /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F342C7E80079A1AFED7232F0 /* ChallengeView.swift */; };
+		54C29FFD37626FD3EA73B166 /* drinks.json in Resources */ = {isa = PBXBuildFile; fileRef = F46397898B7533090C4F8274 /* drinks.json */; };
+		A1B2C3D4E5F60718293A4B5C /* Photos in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B6D /* Photos */; };
+		72CCB6A03FBBEA03E7353432 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF93D20D36AA3896A0FED60B /* Assets.xcassets */; };
+		C71DC639B16038EF6B9C2B41 /* en.json in Resources */ = {isa = PBXBuildFile; fileRef = C535156ED5844E37F1443C0E /* en.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52F913C6BE6AE4B99FA23AF1 /* CocktailDeckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDeckApp.swift; sourceTree = "<group>"; };
+		E799060F2CD646D60783303A /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		F88ED4894A24FCDC39D87FE0 /* VerificationLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationLabel.swift; sourceTree = "<group>"; };
+		25A699F2B91D62FCFF3D97FD /* DeckViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckViewModel.swift; sourceTree = "<group>"; };
+		9FECC172F72D5FF3331A020C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6D3E17968BF2B65EC3306572 /* DrinkCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCardView.swift; sourceTree = "<group>"; };
+		A2D66CE14D3839C55668EB56 /* DrinkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkListView.swift; sourceTree = "<group>"; };
+		A072C555CD64AA6B6430648D /* DrinkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailView.swift; sourceTree = "<group>"; };
+		1465473CD85D5EEC7CD9F8D1 /* SearchFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilterBar.swift; sourceTree = "<group>"; };
+		A6317429CC7BBA03A9B273AC /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
+		A14EFAA227854F106181F2A6 /* CustomCocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCocktail.swift; sourceTree = "<group>"; };
+		848AE2765D761754FDC5C0A4 /* EnglishRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishRecipe.swift; sourceTree = "<group>"; };
+		D4DD116C848FB2CB4BCE9984 /* Recommendation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommendation.swift; sourceTree = "<group>"; };
+		BD0DC73AA9F252F66404573F /* ZeroProof.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroProof.swift; sourceTree = "<group>"; };
+		6231F34B88F19A1127F7757E /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
+		4F38A5277A1BE1FB82429543 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		E545EBB270473E493E47EA91 /* PhotoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoImage.swift; sourceTree = "<group>"; };
+		EE2C8C1D71AB158F9217A094 /* RecommendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendView.swift; sourceTree = "<group>"; };
+		FA4724AF4AFC091CA0CD4972 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		946895628B2F73EA91FD10A8 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		2D4DC7CA1E0CB983360809E4 /* CustomFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFormView.swift; sourceTree = "<group>"; };
+		F342C7E80079A1AFED7232F0 /* ChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeView.swift; sourceTree = "<group>"; };
+		F46397898B7533090C4F8274 /* drinks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = drinks.json; sourceTree = "<group>"; };
+		C535156ED5844E37F1443C0E /* en.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = en.json; sourceTree = "<group>"; };
+		A1B2C3D4E5F60718293A4B6D /* Photos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Photos; sourceTree = "<group>"; };
+		CF93D20D36AA3896A0FED60B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5BF48AA40CAD7891EB709FC /* CocktailDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocktailDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		424153ED3CD079DB4DB459AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		518DA81DB9B99529C0C0AEBE = {
+			isa = PBXGroup;
+			children = (
+				82CF2A43A7100F086D7FCFDD /* CocktailDeck */,
+				F5BF48AA40CAD7891EB709FC /* CocktailDeck.app */,
+			);
+			sourceTree = "<group>";
+		};
+		82CF2A43A7100F086D7FCFDD /* CocktailDeck */ = {
+			isa = PBXGroup;
+			children = (
+				52F913C6BE6AE4B99FA23AF1 /* CocktailDeckApp.swift */,
+				209FAC3A625D83C69ADEB15A /* Models */,
+				F357ED80203487E648855A73 /* ViewModels */,
+				29AC9F3F890EAF73DB9E7C81 /* Views */,
+				AAE953452CCD6DDD91445CEA /* Resources */,
+				CF93D20D36AA3896A0FED60B /* Assets.xcassets */,
+			);
+			path = CocktailDeck;
+			sourceTree = "<group>";
+		};
+		209FAC3A625D83C69ADEB15A = {
+			isa = PBXGroup;
+			children = (
+				E799060F2CD646D60783303A /* Drink.swift */,
+				F88ED4894A24FCDC39D87FE0 /* VerificationLabel.swift */,
+				A6317429CC7BBA03A9B273AC /* AppLanguage.swift */,
+				A14EFAA227854F106181F2A6 /* CustomCocktail.swift */,
+				848AE2765D761754FDC5C0A4 /* EnglishRecipe.swift */,
+				D4DD116C848FB2CB4BCE9984 /* Recommendation.swift */,
+				BD0DC73AA9F252F66404573F /* ZeroProof.swift */,
+				6231F34B88F19A1127F7757E /* Challenge.swift */,
+				4F38A5277A1BE1FB82429543 /* AppStore.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F357ED80203487E648855A73 = {
+			isa = PBXGroup;
+			children = (
+				25A699F2B91D62FCFF3D97FD /* DeckViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		29AC9F3F890EAF73DB9E7C81 = {
+			isa = PBXGroup;
+			children = (
+				9FECC172F72D5FF3331A020C /* ContentView.swift */,
+				6D3E17968BF2B65EC3306572 /* DrinkCardView.swift */,
+				A2D66CE14D3839C55668EB56 /* DrinkListView.swift */,
+				A072C555CD64AA6B6430648D /* DrinkDetailView.swift */,
+				1465473CD85D5EEC7CD9F8D1 /* SearchFilterBar.swift */,
+				E545EBB270473E493E47EA91 /* PhotoImage.swift */,
+				EE2C8C1D71AB158F9217A094 /* RecommendView.swift */,
+				FA4724AF4AFC091CA0CD4972 /* MenuView.swift */,
+				946895628B2F73EA91FD10A8 /* CollectionView.swift */,
+				2D4DC7CA1E0CB983360809E4 /* CustomFormView.swift */,
+				F342C7E80079A1AFED7232F0 /* ChallengeView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AAE953452CCD6DDD91445CEA = {
+			isa = PBXGroup;
+			children = (
+				F46397898B7533090C4F8274 /* drinks.json */,
+				A1B2C3D4E5F60718293A4B6D /* Photos */,
+				C535156ED5844E37F1443C0E /* en.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42AEFBAE01D2DFD981F7DA7D /* CocktailDeck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CF598ACC897FE8648893EB5 /* Build configuration list for PBXNativeTarget "CocktailDeck" */;
+			buildPhases = (
+				7A70D71C385290AF96BF1031 /* Sources */,
+				424153ED3CD079DB4DB459AF /* Frameworks */,
+				285BB1C1430063331E9F5DD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocktailDeck;
+			productName = CocktailDeck;
+			productReference = F5BF48AA40CAD7891EB709FC /* CocktailDeck.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					42AEFBAE01D2DFD981F7DA7D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AD8DC1A475C1871509FE9877 /* Build configuration list for PBXProject "CocktailDeck" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 518DA81DB9B99529C0C0AEBE;
+			productRefGroup = 518DA81DB9B99529C0C0AEBE /* CocktailDeck */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42AEFBAE01D2DFD981F7DA7D /* CocktailDeck */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		285BB1C1430063331E9F5DD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C29FFD37626FD3EA73B166 /* drinks.json in Resources */,
+				A1B2C3D4E5F60718293A4B5C /* Photos in Resources */,
+				72CCB6A03FBBEA03E7353432 /* Assets.xcassets in Resources */,
+				C71DC639B16038EF6B9C2B41 /* en.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A70D71C385290AF96BF1031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7761A48E562F39D668059761 /* CocktailDeckApp.swift in Sources */,
+				7FE6484B491F9B16F8E21D13 /* Drink.swift in Sources */,
+				1DE96A07AA6F1C20D4394788 /* VerificationLabel.swift in Sources */,
+				BC80F9B5F9BDA2C2894C21C5 /* DeckViewModel.swift in Sources */,
+				B0DA3272893A06AB4DC6E278 /* ContentView.swift in Sources */,
+				2B374ABF90381422F357681F /* DrinkCardView.swift in Sources */,
+				359143F2D5B84300159DDDE3 /* DrinkListView.swift in Sources */,
+				1D055D5B076001D48EF3315B /* DrinkDetailView.swift in Sources */,
+				C75A92C4B3BD0B1818CABA0C /* SearchFilterBar.swift in Sources */,
+				CF4E8A23D1ED066D1C5D63F4 /* AppLanguage.swift in Sources */,
+				E1EEEE14EF87525A43E57392 /* CustomCocktail.swift in Sources */,
+				AF98DD6D02117243E76DF416 /* EnglishRecipe.swift in Sources */,
+				20BA471C04A02537440E8174 /* Recommendation.swift in Sources */,
+				A2074D7686F840AA9A262587 /* ZeroProof.swift in Sources */,
+				F508C5C66E1F13145A69DDA3 /* Challenge.swift in Sources */,
+				6D34CEEFEEF0D2B7824ED587 /* AppStore.swift in Sources */,
+				C8696B0761AC52BD522861F4 /* PhotoImage.swift in Sources */,
+				8B2C8681C06765A889061B0A /* RecommendView.swift in Sources */,
+				DAA77586265AB79508DCC870 /* MenuView.swift in Sources */,
+				4C63742646F6A93147D26A88 /* CollectionView.swift in Sources */,
+				AB5291FDF9F27D013B911127 /* CustomFormView.swift in Sources */,
+				799F8737503EC0E8DF481AA6 /* ChallengeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DCFB30EAE59D6917CE906371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		37CDDD61FED8A39EEA88C0F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ADF9B2668011E455D3D7F21A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CocktailDeck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMBED_LIBRARIES_WITH_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BA0348D54C7CF6D7F19BE835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CocktailDeck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMBED_LIBRARIES_WITH_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD8DC1A475C1871509FE9877 /* Build configuration list for PBXProject "CocktailDeck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCFB30EAE59D6917CE906371 /* Debug */,
+				37CDDD61FED8A39EEA88C0F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CF598ACC897FE8648893EB5 /* Build configuration list for PBXNativeTarget "CocktailDeck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF9B2668011E455D3D7F21A /* Debug */,
+				BA0348D54C7CF6D7F19BE835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}

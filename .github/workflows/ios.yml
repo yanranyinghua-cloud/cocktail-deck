@@ -1,0 +1,31 @@
+name: iOS Build Check
+
+# 作用：每次推送到 main 分支（或手动触发）时，在 GitHub 的 Mac 上编译一次，
+# 只验证“编不编得过”，不需要开发者账号、不签名、不出安装包。
+# 看不到模拟器界面；真机手感以后再用云 Mac 或真 Mac 验。
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Build for simulator (no signing)
+        run: |
+          PROJECT=$(find . -maxdepth 3 -name '*.xcodeproj' | head -n 1)
+          echo "Using project: $PROJECT"
+          xcodebuild -project "$PROJECT" \
+            -target CocktailDeck \
+            -destination 'generic/platform=iOS Simulator' \
+            -configuration Debug \
+            CODE_SIGNING_ALLOWED=NO \
+            build
