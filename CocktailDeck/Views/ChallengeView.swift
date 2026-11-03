@@ -150,7 +150,8 @@ struct ChallengeView: View {
                         VStack(alignment: .leading, spacing: 2) {
                             HStack {
                                 if state.mode == .duo {
-                                    Text(index % 2 == 0 ? "A" : "B")
+                                    let side = index % 2 == 0 ? "A" : "B"
+                                    Text(side)
                                         .font(.caption.bold())
                                         .padding(.horizontal, 6)
                                         .padding(.vertical, 2)

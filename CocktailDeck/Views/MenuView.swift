@@ -31,7 +31,7 @@ return ordered.map { title in
 private var shoppingList: [(name: String, uses: [(drinkName: String, amount: String)])] {
 var map: [String: [(String, String)]] = [:]
 for drink in viewModel.menuDrinks {
-for item in drink.ingredients?? [] {
+for item in drink.ingredients {
 map[item.name, default: []].append((drink.name(for: viewModel.language), item.amount))
 }
 }
