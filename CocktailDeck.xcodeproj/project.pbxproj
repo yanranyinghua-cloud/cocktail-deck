@@ -111,6 +111,7 @@
 				4F38A5277A1BE1FB82429543 /* AppStore.swift */,
 			);
 			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		F357ED80203487E648855A73 = {
@@ -119,6 +120,7 @@
 				25A699F2B91D62FCFF3D97FD /* DeckViewModel.swift */,
 			);
 			name = ViewModels;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		29AC9F3F890EAF73DB9E7C81 = {
@@ -137,6 +139,7 @@
 				F342C7E80079A1AFED7232F0 /* ChallengeView.swift */,
 			);
 			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		AAE953452CCD6DDD91445CEA = {
@@ -147,6 +150,7 @@
 				C535156ED5844E37F1443C0E /* en.json */,
 			);
 			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
