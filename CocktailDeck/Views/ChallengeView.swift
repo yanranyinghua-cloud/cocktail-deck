@@ -129,59 +129,14 @@ struct ChallengeView: View {
 
             ForEach(Array(drinks.enumerated()), id: \.element.id) { index, drink in
                 let checked = state.checked.contains(drink.id)
-                HStack(spacing: 10) {
-                    Button {
-                        if checked {
-                            viewModel.challenge?.checked.remove(drink.id)
-                        } else {
-                            viewModel.challenge?.checked.insert(drink.id)
-                        }
-                        viewModel.saveChallenge()
-                    } label: {
-                        Image(systemName: checked ? "checkmark.circle.fill" : "circle")
-                            .foregroundStyle(checked ? .green : .secondary)
-                            .font(.title3)
-                    }
-                    .buttonStyle(.plain)
-
-                    Button {
-                        onDetail(drink)
-                    } label: {
-                        VStack(alignment: .leading, spacing: 2) {
-                            HStack {
-                                if state.mode == .duo {
-                                    let side = index % 2 == 0 ? "A" : "B"
-                                    Text(side)
-                                        .font(.caption.bold())
-                                        .padding(.horizontal, 6)
-                                        .padding(.vertical, 2)
-                                        .background(Color.accentColor.opacity(0.15))
-                                        .foregroundStyle(.accentColor)
-                                        .clipShape(Capsule())
-                                }
-                                Text(drink.name(for: viewModel.language))
-                                    .font(.subheadline.bold())
-                                    .strikethrough(checked)
-                            }
-                            Text(drink.baseSpirits.joined(separator: " · "))
-                                .font(.caption)
-                                .foregroundStyle(.secondary)
-                        }
-                    }
-                    .buttonStyle(.plain)
-                    Spacer()
-                    VerificationBadge(label: drink.verificationLabel)
-                }
-                .padding(10)
-                .background(Color.secondary.opacity(0.08))
-                .clipShape(RoundedRectangle(cornerRadius: 12))
-                .opacity(dealt ? 1 : 0)
-                .offset(y: dealt ? 0 : 16)
-                .animation(
-                    .spring(response: 0.4, dampingFraction: 0.8)
-                        .delay(Double(index) * 0.06),
-                    value: dealt
-                )
+                challengeRow(drink, index: index, checked: checked, state: state)
+                    .opacity(dealt ? 1 : 0)
+                    .offset(y: dealt ? 0 : 16)
+                    .animation(
+                        .spring(response: 0.4, dampingFraction: 0.8)
+                            .delay(Double(index) * 0.06),
+                        value: dealt
+                    )
             }
 
             Button("结束这一局", role: .destructive) {
@@ -190,5 +145,53 @@ struct ChallengeView: View {
             }
             .buttonStyle(.bordered)
         }
+    }
+
+    private func challengeRow(_ drink: Drink, index: Int, checked: Bool, state: ChallengeState) -> some View {
+        HStack(spacing: 10) {
+            Button {
+                if checked {
+                    viewModel.challenge?.checked.remove(drink.id)
+                } else {
+                    viewModel.challenge?.checked.insert(drink.id)
+                }
+                viewModel.saveChallenge()
+            } label: {
+                Image(systemName: checked ? "checkmark.circle.fill" : "circle")
+                    .foregroundStyle(checked ? .green : .secondary)
+                    .font(.title3)
+            }
+            .buttonStyle(.plain)
+
+            Button {
+                onDetail(drink)
+            } label: {
+                VStack(alignment: .leading, spacing: 2) {
+                    HStack {
+                        if state.mode == .duo {
+                            Text(index % 2 == 0 ? "A" : "B")
+                                .font(.caption.bold())
+                                .padding(.horizontal, 6)
+                                .padding(.vertical, 2)
+                                .background(Color.accentColor.opacity(0.15))
+                                .foregroundStyle(.accentColor)
+                                .clipShape(Capsule())
+                        }
+                        Text(drink.name(for: viewModel.language))
+                            .font(.subheadline.bold())
+                            .strikethrough(checked)
+                    }
+                    Text(drink.baseSpirits.joined(separator: " · "))
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+            }
+            .buttonStyle(.plain)
+            Spacer()
+            VerificationBadge(label: drink.verificationLabel)
+        }
+        .padding(10)
+        .background(Color.secondary.opacity(0.08))
+        .clipShape(RoundedRectangle(cornerRadius: 12))
     }
 }
