@@ -49,7 +49,7 @@ lines.append("")
 }
 lines.append("")
 for entry in shoppingList {
-let uses = entry.uses.map { "\($0.drinkName)\($0.amount.isEmpty? "": " \($0.amount)")"}
+let uses = entry.uses.map { "\($0.drinkName)\($0.amount.isEmpty ? "" : " \($0.amount)")"}
 .joined(separator: "；")
 lines.append("· \(entry.name)：\(uses)")
 }
@@ -114,13 +114,13 @@ ForEach(shoppingList.indices, id: \.self) { entryIndex in
     let entry = shoppingList[entryIndex]
 VStack(alignment:.leading, spacing: 2) {
 Text(entry.name).font(.subheadline.bold())
-Text(entry.uses.map { "\($0.drinkName)\($0.amount.isEmpty? "": " \($0.amount)")"}.joined(separator: "；"))
+Text(entry.uses.map { "\($0.drinkName)\($0.amount.isEmpty ? "" : " \($0.amount)")"}.joined(separator: "；"))
 .font(.caption)
 .foregroundStyle(.secondary)
 }
 }
 
-Button(copied? "已复制 ✓": "复制文字版") {
+Button(copied ? "已复制 ✓" : "复制文字版") {
 UIPasteboard.general.string = textVersion
 copied = true
 }
@@ -136,7 +136,7 @@ Text("适量饮酒，开心最重要")
 }
 .onDisappear {
 let title = draftTitle.trimmingCharacters(in:.whitespaces)
-if!title.isEmpty, title!= viewModel.menu.title {
+if !title.isEmpty, title != viewModel.menu.title {
 viewModel.saveMenuTitle(title)
 }
 }
