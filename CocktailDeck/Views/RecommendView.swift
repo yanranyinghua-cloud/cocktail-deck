@@ -169,7 +169,7 @@ struct RecommendView: View {
     private func chipRow<T: Hashable>(
         _ options: [T],
         selection: Binding<T>,
-        title: (T) -> String
+        title: @escaping (T) -> String
     ) -> some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 8) {
